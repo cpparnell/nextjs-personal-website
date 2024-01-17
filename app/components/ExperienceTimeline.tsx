@@ -1,9 +1,13 @@
 import Image from 'next/image'
 
-export default function Experience() {
+export default function ExperienceTimeline() {
   return (
-    <section className="w-full pr-[400px] pl-[200px]">
+    <section className="w-full pl-[400px] pr-[200px]">
         <div className="justify-start items-start block p-6 bg-white border border-gray-300 rounded-lg">
+            <div>
+                <p className="font-medium dark:text-white sm:text-md md:text-lg lg:text-lg">Experience</p>
+            </div>
+            <div className="border-t border-gray-300 my-4"></div>
             <ol className="relative border-s border-gray-200 dark:border-gray-700">                  
                 <li className="mb-10 ms-4">
                     <div className="flex items-center justify-start">

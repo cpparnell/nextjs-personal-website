@@ -5,11 +5,12 @@ export default function Experience() {
   /*
   Things to do:
     parameterize, taking a tuple of (string, list). example: (CompanyName, [(StartDate, EndDate, Position, Description), ...)])
-                  taking optional link and where to
+                  taking optional link
+
   **/
 
   return (
-    <section className="w-full pr-[400px] pl-[200px]">
+    <section className="w-full pr-400 pl-200">
         <div className="justify-start items-start block p-6 bg-white border border-gray-300 rounded-lg">
             <ol className="relative border-s border-gray-200 dark:border-gray-700">                  
                 <li className="mb-10 ms-4">

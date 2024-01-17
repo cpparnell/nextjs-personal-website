@@ -10,7 +10,7 @@ export default function About() {
     }
   
     return (
-    <section className="w-full pr-[400px] pl-[200px]">
+    <section className="w-full pl-[400px] pr-[200px]">
         <div className="justify-start items-start block p-6 bg-white border border-gray-300 rounded-lg">
             <div>
                 <p className="font-medium dark:text-white sm:text-md md:text-lg lg:text-lg">About Me</p>

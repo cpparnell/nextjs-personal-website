@@ -1,8 +1,13 @@
 import Image from 'next/image'
 import AvatarImg from '../../public/profilepic.jpeg';
+import Map from './Map'
 
 export default function Badge() {
-  return (
+  
+    const center = {lat: 51.505, lng: 50.001};
+    const zoom = 13;
+  
+    return (
     <section className="fixed top-8 left-8 z-50">
         <div className="flex justify-end items-start h-screen">
             <div className="block p-6 bg-white border border-gray-300 rounded-lg">
