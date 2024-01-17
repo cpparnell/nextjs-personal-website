@@ -1,11 +1,10 @@
 import Image from 'next/image'
+import dynamic from 'next/dynamic';
 import AvatarImg from '../../public/profilepic.jpeg';
-import Map from './Map'
+
+const ContactForm = dynamic(() => import('./ContactForm'), { ssr: false });
 
 export default function Badge() {
-  
-    const center = {lat: 51.505, lng: 50.001};
-    const zoom = 13;
   
     return (
     <section className="fixed top-8 left-8 z-50">
@@ -47,6 +46,7 @@ export default function Badge() {
                             </button>
                         </a>
                 </div>
+                <ContactForm />
             </div>
         </div>
     </section>
