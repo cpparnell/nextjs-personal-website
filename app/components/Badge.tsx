@@ -49,7 +49,7 @@ export default function Badge() {
                         </a>          
                 </div>
                 <div className="pt-8">
-                    <CopyToClipboardButton text="connorparnell2018@gmail.com" />
+                    <CopyToClipboardButton text="connorparnell1999@gmail.com" />
                 </div>
                 <div className="pt-4">
                     <DownloadButton text="Download Resume" fileUrl="/placeholder_resume.pdf" />

@@ -1,46 +1,35 @@
-import Image from 'next/image'
+import Box from "./ContentBox"
+import Experience from "./Experience"
 
 export default function ExperienceTimeline() {
   return (
-    <section className="w-full pl-[400px] pr-[200px]">
-        <div className="justify-start items-start block p-6 bg-white border border-gray-300 rounded-lg">
-            <div>
-                <p className="font-medium dark:text-white sm:text-md md:text-lg lg:text-lg">Experience</p>
-            </div>
-            <div className="border-t border-gray-300 my-4"></div>
+        <Box title="Experience">
             <ol className="relative border-s border-gray-200 dark:border-gray-700">                  
-                <li className="mb-10 ms-4">
-                    <div className="flex items-center justify-start">
-                        <h1 className="text-lg font-bold">LTN Global</h1>
-                    </div>
-                    <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                    <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">August 2022 - Present</time>
-                    <h3 className="text-md font-semibold text-gray-900 dark:text-white">Software Engineer</h3>
-                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Insert Description of what I have done</p>
-                </li>
-                <li className="mb-10 ms-4">
-                    <h1 className="text-lg font-bold">CSG International</h1>
-                    <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                    <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">September 2021 - March 2022</time>
-                    <h3 className="text-md font-semibold text-gray-900 dark:text-white">Test Automation Engineer</h3>
-                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Insert Description of what I have done</p>
-                </li>
-                <li className="mb-10 ms-4">
-                    <h1 className="text-lg font-bold">CSG International</h1>
-                    <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                    <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">June 2021 - September 2021</time>
-                    <h3 className="text-md font-semibold text-gray-900 dark:text-white">Test Automation Engineering Intern</h3>
-                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Insert Description of what I have done</p>
-                </li>
-                <li className="mb-10 ms-4">
-                    <h1 className="text-lg font-bold">Wi-Tronix, LLC</h1>
-                    <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                    <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">June 2020 - Jan 2021</time>
-                    <h3 className="text-md font-semibold text-gray-900 dark:text-white">Software Development Intern</h3>
-                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Insert Description of what I have done</p>
-                </li>
+                <Experience 
+                company="LTN Global"
+                start_date="August 2022"
+                position="Software Engineer" 
+                description="insert description" />
+                <Experience 
+                company="CSG International"
+                start_date="September 2021"
+                end_date="March 2022"
+                position="Test Automation Engineer" 
+                description="insert description" />
+                <Experience 
+                company="CSG International"
+                start_date="June 2021"
+                end_date="September 2022"
+                position="Test Automation Engineering Intern" 
+                description="insert description" />
+                <Experience 
+                company="Wi-Tronix, LLC"
+                start_date="June 2020"
+                end_date="January 2021"
+                position="Software Development Intern" 
+                description="insert description" />
             </ol>
-        </div>
-    </section>
+        </Box>
+
   )
 }
