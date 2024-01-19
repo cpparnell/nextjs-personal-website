@@ -58,7 +58,7 @@ const ContactForm = () => {
       <form onSubmit={handleSubmit} className="flex flex-wrap flex-col py-2">
           <div>
             <div className="py-2">
-              <input className="rounded-lg bg-grey-500 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 flex items-center font-mono"
+              <input className="rounded-lg bg-grey-500 group-hover:from-green-400 group-hover:to-blue-600 dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 flex items-center"
                 type="email" 
                 name="email" 
                 value={formState.email} 
@@ -67,7 +67,7 @@ const ContactForm = () => {
               />
             </div>
             <div className="py-2">
-              <input className="rounded-lg bg-grey-500 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 flex items-center font-mono"
+              <input className="rounded-lg bg-grey-500 group-hover:from-green-400 group-hover:to-blue-600 dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 flex items-center"
                 type="text" 
                 name="subject" 
                 value={formState.subject} 
@@ -77,16 +77,16 @@ const ContactForm = () => {
               />
             </div>
             <div className="py-2">
-              <textarea className="rounded-lg bg-grey-500 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 flex items-center font-mono"
+              <textarea className="rounded-lg bg-grey-500 group-hover:from-green-400 group-hover:to-blue-600 dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 flex items-center"
                 name="message" 
                 value={formState.message} 
                 onChange={handleChange} 
-                placeholder="Message"
+                placeholder="Hi! 👋"
               />
             </div>
           </div>
         <div className="pt-2">
-          <button type="submit" className='relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 flex items-center font-mono'>
+          <button type="submit" className='relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 flex items-center'>
               <span className="relative px-2 py-2 stransition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                 <div className="flex items-center">
                   <p>Send</p>

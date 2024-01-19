@@ -11,7 +11,7 @@ export default function Badge() {
     return (
     <section className="fixed top-8 left-8 z-50">
         <div className="flex-col justify-end items-start h-screen">
-            <div className="block p-6 bg-white border border-gray-300 rounded-lg mb-8">
+            <div className="shadow-lg block p-6 bg-white border border-gray-300 rounded-lg mb-8">
                 <div className="flex items-center gap-4">
                     <div>
                         <Image className="w-14 h-14 rounded-full" src={AvatarImg} alt="avatar photo" height={1000} width={1000} />
@@ -55,7 +55,7 @@ export default function Badge() {
                     <DownloadButton text="Download Resume" fileUrl="/placeholder_resume.pdf" />
                 </div>
             </div>
-            <div className="block px-6 pt-6 pb-2 bg-white border border-gray-300 rounded-lg">
+            <div className="shadow-lg block px-6 pt-6 pb-2 bg-white border border-gray-300 rounded-lg">
                 <div>
                     <ContactForm />
                 </div>

@@ -1,5 +1,3 @@
-import { start } from "repl";
-
 interface Props {
     company: string;
     start_date: string;

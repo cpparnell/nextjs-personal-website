@@ -8,13 +8,13 @@ interface Props {
 const Box: React.FC<Props> = ({title, children}) => {
     return (
         <section className="w-full pl-[400px] pr-[200px]">
-        <div className="justify-start items-start block p-6 bg-white border border-gray-300 rounded-lg">
-            <div>
-                <p className="font-medium dark:text-white sm:text-md md:text-lg lg:text-lg">{title}</p>
+            <div className="shadow-lg hover:shadow-2xl transition-shadow duration-300 justify-start items-start block p-6 bg-white border border-gray-300 rounded-lg">
+                <div>
+                    <p className="font-medium dark:text-white sm:text-md md:text-lg lg:text-lg">{title}</p>
+                </div>
+                <div className="border-t border-gray-300 my-4"></div>
+                {children}
             </div>
-            <div className="border-t border-gray-300 my-4"></div>
-            {children}
-        </div>
     </section>
     );
 };
