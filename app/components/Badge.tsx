@@ -55,10 +55,13 @@ export default function Badge() {
                     <DownloadButton text="Download Resume" fileUrl="/placeholder_resume.pdf" />
                 </div>
             </div>
-            <div className="shadow-lg block px-6 pt-6 pb-2 bg-white border border-gray-300 rounded-lg">
+            <div className="shadow-lg block px-6 pt-6 pb-2 bg-white border border-gray-300 rounded-lg mb-8">
                 <div>
                     <ContactForm />
                 </div>
+            </div>
+            <div className="shadow-lg block px-6 py-2 bg-white border border-gray-300 rounded-lg text-sm">
+                <p>Like this website? <a className="text-gradient font-bold" href="https://github.com/cpparnell/nextjs-personal-website" >Check out the code here!</a></p>
             </div>
         </div>
     </section>
