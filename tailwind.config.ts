@@ -8,9 +8,11 @@ const config: Config = {
     "./pages/**/*.{ts,tsx}",
     "./public/**/*.html",
   ],
-  theme: {},
+  theme: {
+  },
   plugins: [
-    require("flowbite/plugin")
+    require("flowbite/plugin"),
   ],
 }
+
 export default config

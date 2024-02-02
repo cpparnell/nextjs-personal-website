@@ -1,15 +1,16 @@
 interface Props {
-    color: string;
-  }
+    text: string;
+}
 
-const Tag: React.FC<Props> = ({color}) => {
-    
-    const lowercase_color = color.toLowerCase();
-    
+const Tag: React.FC<Props> = ({text}) => {
+        
     return (
-        <span className={`bg-${lowercase_color}-100 text-${lowercase_color}-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-${lowercase_color}-900 dark:text-${lowercase_color}-300`}>
-            Default
-        </span>    );
+        <div className="rounded-lg relative inline-flex items-center justify-center p-0.5  border-2 border-gray-300 ml-2 hover:shadow-md" >
+            <span className="px-2 py-1 font-bold text-sm text-gradient">
+                {text}
+            </ span>
+        </div>
+        );
 };
 
 export default Tag;
