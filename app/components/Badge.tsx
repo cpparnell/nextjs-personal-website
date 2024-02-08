@@ -52,7 +52,7 @@ export default function Badge() {
                     <CopyToClipboardButton text="connorparnell1999@gmail.com" />
                 </div>
                 <div className="pt-4">
-                    <DownloadButton text="Download Resume" fileUrl="/placeholder_resume.pdf" />
+                    <DownloadButton text="Download Resume" fileUrl="/resume.pdf" />
                 </div>
             </div>
             <div className="shadow-lg block px-6 pt-6 pb-2 bg-white border border-gray-300 rounded-lg mb-8">
