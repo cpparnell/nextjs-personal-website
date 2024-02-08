@@ -14,14 +14,16 @@ export default function Home() {
           <></>
         </Head>
         <main className="flex flex-wrap min-h-screen flex-col items-center justify-between p-8">
-          <Badge />
-          <div className='min-w-[1200px] min-h-[500px] max-h-[1080pix] max'>
-            <About/>
+          <div className='min-w-[1200px] min-h-[500px] max-h-[1080pix]'>
+            <Badge />
+            <About />
             <div className='pt-8'>
               <ExperienceTimeline />
             </div>
             <div className='pt-8'>
               <Education />
+            </div>
+            <div className='pt-8 md:hidden w-full pl-[400px] pr-[200px]'>
             </div>
           </div>
         </main>

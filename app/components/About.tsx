@@ -15,7 +15,7 @@ export default function About() {
             <p className="mb-4">
             I am a {calculateAge(new Date('1999-10-15'))} year old software engineer who loves to create.
             </p>
-            When I am not working on software, you can find me <a href="https://support.rmhc.org/site/TR/TeamRMHC-ChicagoMarathon/TeamRMHC?px=1635707&pg=personal&fr_id=1600" className="text-gradient hover:underline">training for a marathon</a> on Chicago's Lakefront Trail or exploring the city's rich culinary scene with my friends.
+            When I am not working on software, you can find me training for a marathon <a href="https://support.rmhc.org/site/TR/TeamRMHC-ChicagoMarathon/TeamRMHC?px=1635707&pg=personal&fr_id=1600" className="text-gradient hover:underline">(support me here!)</a> on Chicago's Lakefront Trail or exploring the city's rich culinary scene with my friends.
         </div>
     </Box>
   )

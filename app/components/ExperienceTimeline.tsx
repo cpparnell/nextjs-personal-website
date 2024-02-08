@@ -10,8 +10,11 @@ export default function ExperienceTimeline() {
                 company="LTN Global"
                 start_date="August 2022"
                 position="Software Engineer" 
-                headline="Architecting and automating video networking and encoding validation processes on broadcasts delivered to millions worldwide" 
-                description="insert description" />
+                points={[
+                  "Designing and automating video networking and encoding validation processes on broadcasts delivered to millions in Europe and the Americas.",
+                  "Architect and developer of a tool that automatically monitors ad insertion across affiliate news channels, ensuring consistent on-time delivery of advertisements for more than a million viewers.",
+                  "Developing and maintaining CI/CD pipelines in Gitlab for hundreds of test cases spanning multiple products."
+                ]} />
                 <div className="mb-10 ml-2">
                   <Tag text='Video Engineering'></Tag>
                   <Tag text='Python'></Tag>
@@ -22,27 +25,38 @@ export default function ExperienceTimeline() {
                 start_date="September 2021"
                 end_date="March 2022"
                 position="Test Automation Engineer" 
-                headline="Architecting and implementing UI and API test plans for user-facing products" />
+                points={[
+                  "Architected test plans and implemented UI and API automation test suites for Ascendon, a product used by Fortune 500 customers to bundle and sell digital services.",
+                  "Developed and maintained CI/CD pipelines for Acendon product in Jenkins."
+                ]} />
                 <div className="mb-10 ml-2">
-
+                  <Tag text='Test Architecture'></Tag>
+                  <Tag text='Automation'></Tag>
+                  <Tag text='C#'></Tag>
                 </div>                
                 <Experience 
                 company="CSG International"
                 start_date="June 2021"
                 end_date="September 2022"
                 position="Test Automation Engineering Intern" 
-                description="Automating UI and API testing for user-facing products" />
+                points={[
+                  "Implemented all-encompassing UI automation tests in C# Selenium for CSG Forte, a digital payment product.",
+                  "Developed and maintained CI/CD pipelines for Forte product in Jenkins."
+                ]} />
                 <div className="mb-10 ml-2">
-
+                  <Tag text='Test Automation'></Tag>
+                  <Tag text='Selenium'></Tag>
+                  <Tag text='C#'></Tag>
                 </div>
                 <Experience 
-                company="Wi-Tronix, LLC"
+                company="Wi-Tronix"
                 start_date="June 2020"
                 end_date="January 2021"
                 position="Software Development Intern"
-                description="Executed the full-scale automation of testing for a data monitoring dashboard, significantly increasing data accuracy and decreasing downtime. 
-                This dashboard tracked realtime safety and efficiency metrics via on-train IoT devices, leading to a boost in operational performance and reduced costs for companies across the transportation industry.
-                " />
+                points={[
+                  "Developed full-scale automation of testing for a live data monitoring dashboard that is used to track realtime safety and efficiency metrics for trains. Automated testing led to a 30% decrease in data inaccuracy and a 20% decrease in dashboard downtime.",
+                  "The deployment of this dashboard to national rail companies led to a significant increase in rail safety and efficiency."
+                ]} />
                 <div className="ml-2">
                   <Tag text='Selenium'></Tag>
                   <Tag text='Java'></Tag>

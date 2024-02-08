@@ -4,10 +4,25 @@ interface Props {
     end_date?: string | null;
     position: string;
     headline?: string | null;
-    description?: string | null;
+    points?: string[] | null;
   }
 
-const Experience: React.FC<Props> = ({company, start_date, end_date = null, position, headline = null, description = null}) => {
+
+
+const Experience: React.FC<Props> = ({company, start_date, end_date = null, position, headline = null, points = null}) => {
+    
+    function generateBulletPoints(points: string[]): JSX.Element {
+        return (
+            <ul>
+                {points.map((point, index) => (
+                    <li key={index} className="pb-4">
+                        {point}
+                    </li>
+                ))}
+            </ul>
+        );
+    }
+    
     return (
         <li className="ms-4">
             <div className="flex items-center justify-start">
@@ -17,7 +32,7 @@ const Experience: React.FC<Props> = ({company, start_date, end_date = null, posi
             <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{start_date} - {end_date || "Present"}</time>
             <h3 className="text-md font-semibold text-gray-900 dark:text-white">{position}</h3>
             <h4 className="text-md">{headline}</h4>
-            {description && <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">{description}</p>}
+            {points && <div className="mb-4 mt-2 text-base font-normal text-gray-500 dark:text-gray-400">{generateBulletPoints(points)}</div>}
         </li>
     );
 };
