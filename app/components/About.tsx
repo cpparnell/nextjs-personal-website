@@ -13,9 +13,10 @@ export default function About() {
     <Box title="About">
         <div className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
             <p className="mb-4">
-            I am a {calculateAge(new Date('1999-10-15'))} year old software engineer who loves to create.
+                <p className="font-bold mb-4">Hi, I&lsquo;m Connor.</p>
+                I am a {calculateAge(new Date('1999-10-15'))} year old software engineer who loves to create.
             </p>
-            When I am not working on software, you can find me training for a marathon <a href="https://support.rmhc.org/site/TR/TeamRMHC-ChicagoMarathon/TeamRMHC?px=1635707&pg=personal&fr_id=1600" className="text-gradient hover:underline">(support me here!)</a> on Chicago's Lakefront Trail or exploring the city's rich culinary scene with my friends.
+            When I am not working on software, you can find me training for a marathon <a href="https://support.rmhc.org/site/TR/TeamRMHC-ChicagoMarathon/TeamRMHC?px=1635707&pg=personal&fr_id=1600" className="text-gradient hover:underline">(support me here!)</a> on Chicago&lsquo;s Lakefront Trail or exploring the city&lsquo;s rich culinary scene with my friends.
         </div>
     </Box>
   )
